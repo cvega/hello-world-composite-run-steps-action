@@ -10,3 +10,4 @@ runs:
   steps: 
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
+    - run: ${{ github.action_path }}/hello.sh
