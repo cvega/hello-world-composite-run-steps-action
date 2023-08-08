@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "hello from side car script"
+echo "hello from composite action repo"
