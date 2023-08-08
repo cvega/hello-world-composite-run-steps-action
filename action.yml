@@ -8,6 +8,9 @@ inputs:
 runs:
   using: "composite"
   steps: 
-    - run: echo Hello ${{ inputs.who-to-greet }}.
+    - name: hello-mona 
+      run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
-    - run: ${{ github.action_path }}/hello.sh
+    - name: hello-script
+      run: ${{ github.action_path }}/hello.sh
+      shell: bash
